@@ -1,0 +1,1 @@
+((${this, metric=mem|max_vm_mem_contention} <1) && (${this, metric=datastore|max_vm_disk_latency} < 20) && (${this, metric=cpu|max_vm_cpu_contention} <20) ? 1 :0)
